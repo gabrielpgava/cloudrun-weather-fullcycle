@@ -22,8 +22,19 @@ docker build -t gabrielpgava/weather .
 ## Rodando a Aplicação no Docker
 Após a construção da imagem, você pode rodar a aplicação com o seguinte comando:
 ```bash
-docker run -p 8080:8080 gabrielpgava/weather:latest -d 
+docker run -p 8080:8080 -e WHEATHERKEY=YOUR_API_KEY -d gabrielpgava/weather:latest
 ```
 
 A aplicação estará disponível em `http://localhost:8080`.
+
+## URL do Cloud Run
+A aplicação está disponível no Google Cloud Run:
+```
+https://cloudrun-weather-fullcycle-921288995704.us-central1.run.app/weather?cep=
+```
+
+### Exemplo de uso
+```
+https://cloudrun-weather-fullcycle-921288995704.us-central1.run.app/weather?cep=88914000
+```
 
