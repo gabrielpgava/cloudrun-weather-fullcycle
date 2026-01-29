@@ -1,0 +1,11 @@
+
+## GET Arroio do Silva
+GET http://localhost:8080/weather?cep=88914000
+
+
+### GET Criciuma
+GET http://localhost:8080/weather?cep=88801000
+
+
+### GET Forquilhinha
+GET http://localhost:8080/weather?cep=88801000
