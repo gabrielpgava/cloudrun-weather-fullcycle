@@ -23,6 +23,11 @@ func main() {
 	handler := wheather.NewWeatherHandler(weatherService, cepResolver)
 	http.Handle("/weather", handler)
 
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(http.StatusOK)
+		w.Write([]byte("Welcome to the Weather API! Use /weather?cep={zipcode} to get weather information."))
+	})
+
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
