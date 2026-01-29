@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	wheather "github.com/gabrielpgava/cloudRun-Weather-FullCycle/internal/weather"
+	wheather "github.com/gabrielpgava/cloudrun-weather-fullcycle/internal/weather"
 	"github.com/joho/godotenv"
 )
 
